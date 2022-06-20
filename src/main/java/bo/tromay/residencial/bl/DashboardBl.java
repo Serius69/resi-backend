@@ -13,17 +13,11 @@ public class DashboardBl {
     DashboardDao dasboardDao;
 
 
-    public List<DataStringDoubleDto> getProductsCategory() {
-        return dasboardDao.getProductCategory();
-    }
     public List<DataStringIntDto> getProductSells() {
         return dasboardDao.getProductSells();
     }
     public List<DataStringDoubleDto> getSellsbyMonth() {
         return dasboardDao.getSellsbyMonth();
-    }
-    public List<DataStringStringIntDto> getQuantitySellsbyMonthCategory() {
-        return dasboardDao.getQuantitySellsbyMonthCategory();
     }
 
     public List<DataStringIntDto> getQuantitySellsbyMonth() {
