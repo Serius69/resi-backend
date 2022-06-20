@@ -1,0 +1,38 @@
+spring:
+  application:
+    name: resi-backend
+  h2:
+    console:
+      enabled: true
+  datasource:
+    url: jdbc:mysql://localhost:3306/waliki
+    username: mysql
+    password: mysql
+  data:
+    rest:
+      base-path: /api
+      detection-strategy: ANNOTATED
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+###
+allowed:
+  origins: https://localhost:4200
+  ##origins: https://localhost:8080/api/ms-product
+###
+server:
+  port: 8082
+  ssl:
+    enabled: false
+    key-alias: luv2code
+    key-store: classpath:luv2code-keystore.p12
+    key-store-password: secret
+    key-store-type: PKCS12
+###
+okta:
+  oauth2:
+    client-id: 0oa4x6ft4elsn2lJQ5d7
+    client-secret: BYfZe5fTkL9BIoveFMTlrtIowruKmeI5lcFTZWz-
+    issuer: https://dev-42801062.okta.com/oauth2/default
+####
